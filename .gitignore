@@ -1,0 +1,23 @@
+# Local runtime/build files
+**/node_modules/
+**/dist/
+**/build/
+**/coverage/
+**/.angular/
+**/.env
+**/.env.*
+**/*.log
+**/.DS_Store
+**/Thumbs.db
+.vscode/
+.idea/
+
+# Archived Azure state, credentials and providers never belong in Git
+**/*.tfstate
+**/*.tfstate.*
+**/.terraform/
+**/*.tfvars
+**/*.pfx
+**/*.pem
+**/id_rsa
+**/id_ed25519

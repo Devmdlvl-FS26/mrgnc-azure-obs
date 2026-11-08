@@ -1,0 +1,17 @@
+{
+  "name": "emergency-surge-node-api",
+  "version": "0.5.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --import ./src/instrumentation.js src/server.js",
+    "dev": "node --watch --import ./src/instrumentation.js src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@azure/monitor-opentelemetry": "^1.18.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  }
+}

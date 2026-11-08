@@ -1,0 +1,98 @@
+[
+  {
+    "file": "screenshots/01-application-running.png",
+    "sha256": "73c77a4bf5fa04bc9514c273bf2f1457f5b21762c2fe8fb263f425c9cd24d2fb",
+    "evidence": "Angular supervisor dashboard: working application",
+    "original_capture_filename": "Supervisor Dashboard Running.png"
+  },
+  {
+    "file": "screenshots/02-application-offline.png",
+    "sha256": "c60e3ffcc32d350a7582018f7520095f9a35a47283ea29de7fd9b6ba17a650bc",
+    "evidence": "Angular supervisor dashboard: deliberate offline/failure state",
+    "original_capture_filename": "Supervisor Dashboard Offline.png"
+  },
+  {
+    "file": "screenshots/03-azure-hosted-frontend.png",
+    "sha256": "01c527a8d3fd4262275629c707977d585d7547b59d194a2b269ebd40ca73dfc1",
+    "evidence": "Historically running frontend in Azure",
+    "original_capture_filename": "AZ034_STEP24_Frontend_App_Running_On_Azure.png"
+  },
+  {
+    "file": "screenshots/04-azure-devops-backend-pipeline.png",
+    "sha256": "7b0f5e24cb6d12ef5770a9c7d9259eac6b85779137a75312f3c068b3d1d24b52",
+    "evidence": "Successful Azure DevOps backend Dev deployment",
+    "original_capture_filename": "AZ042_STEP30A_Pipeline_Driven_Dev_Backend_Deployment_Succeeded.png"
+  },
+  {
+    "file": "screenshots/05-azure-devops-frontend-pipeline.png",
+    "sha256": "3363df131b70bf8c83a647811246c68be964a965cbe50e366402aa7b61a1e0a2",
+    "evidence": "Successful Azure DevOps frontend Dev deployment",
+    "original_capture_filename": "AZ043_STEP30B_Pipeline_Driven_Dev_Frontend_Deployment_Succeeded.png"
+  },
+  {
+    "file": "screenshots/06-prod-recovery-failure.png",
+    "sha256": "22b955be33c70a64ca60e7e9a14c05e7dd2daf685bd490218d02f13838bbfd91",
+    "evidence": "Controlled production drill: failed frontend/backend communication",
+    "original_capture_filename": "AZ054_STEP35A_Rollback_Drill_Frontend_Cannot_Reach_Backend.png"
+  },
+  {
+    "file": "screenshots/07-prod-recovery-success.png",
+    "sha256": "79fa7da26647438b41e5fc7a1b3813cf1170f3c43844f7480c9b45eabcbfa001",
+    "evidence": "Controlled production drill: integration recovered",
+    "original_capture_filename": "AZ056_STEP35C_Rollback_Drill_Frontend_Backend_Comms_Recovered.png"
+  },
+  {
+    "file": "screenshots/08-azure-loadtest-p90.png",
+    "sha256": "4d21a432d50eccf295080e929b684f5d354c9ff0bcb968ae94b206810bda18f5",
+    "evidence": "Azure Load Testing aggregate: requests, throughput, P90, error percentage",
+    "original_capture_filename": "LT025_STEP23_Load_Test_Result_Summary_79334_Requests_Zero_Errors.png"
+  },
+  {
+    "file": "screenshots/09-azure-loadtest-stats.png",
+    "sha256": "12cd7d882aff359fcc39eb144154b846901c4fa49dcb1fb3baa33ccdbc5b8cc0",
+    "evidence": "Additional Azure Load Testing statistics",
+    "original_capture_filename": "LT030_STEP26_Load_Test_All_Statistics_View.png"
+  },
+  {
+    "file": "screenshots/10-telemetry-startup-fix.png",
+    "sha256": "4e252924536dd11977a1b5acd18076cea874b1fa182e8830b2a60cd3c9999521",
+    "evidence": "Container startup / telemetry initialization evidence",
+    "original_capture_filename": "AI013_STEP10_Dockerfile_Fix_AKS_Deployment_Logs_Initialized.png"
+  },
+  {
+    "file": "screenshots/11-aks-telemetry-role.png",
+    "sha256": "b15cae0887bb181c66f9ee3e9f89de77c0322983da62ce53b74d23556ca4c4e6",
+    "evidence": "Application Insights requests linked to AKS backend role instance",
+    "original_capture_filename": "AI018_STEP15_AKS_Backend_KQL_Node_Role_Instance_Proof.png"
+  },
+  {
+    "file": "screenshots/12-appinsights-p50-p95.png",
+    "sha256": "441c58297577ee882ad34750eb3fad9d02ef43098f7976c36a159cd3b779bd2f",
+    "evidence": "Application Insights KQL P50/P95 from a separate smaller request sample",
+    "original_capture_filename": "AI019_STEP16_AKS_Backend_KQL_P50_P95_Node_Proof.png"
+  },
+  {
+    "file": "screenshots/13-local-scenario-configuration.png",
+    "sha256": "adaa97c4f15c60b9d31d49130f7a7b9cffeb00f037fc9e08c42867714cee76ff",
+    "evidence": "Locally running Angular dashboard with 25-call Regional flooding configuration, degraded upstream response, operator timeout and interrupted-call controls; prior to dispatch.",
+    "original_capture_filename": "1.png",
+    "source_archive": "new-set-from-one-repo.zip",
+    "capture_scope": "new local verification 2026-11-07; not an Azure deployment or load test"
+  },
+  {
+    "file": "screenshots/14-local-correlated-failure-timeout-logs.png",
+    "sha256": "b8bb4ac0aa669f42a695b9ceea1a6d1b0ea06c15745d12839bd0a8fccd927619",
+    "evidence": "Local Node.js structured log entries from the simulated dispatch, including request/correlation IDs, status transition events and intentional HTTP 502/504 responses.",
+    "original_capture_filename": "3.png",
+    "source_archive": "new-set-from-one-repo.zip",
+    "capture_scope": "new local verification 2026-11-07; not an Azure deployment or load test"
+  },
+  {
+    "file": "screenshots/15-local-completed-25-call-run.png",
+    "sha256": "3d1ab314f114fffb2a64f09a43f7a1a3f4f224a764ecc9392db0526f3b2cb54a",
+    "evidence": "Completed local Angular/Node.js run: 25 total calls, 16 completed, 4 failed and 5 timed out; dashboard status Ready and backend Healthy.",
+    "original_capture_filename": "6.png",
+    "source_archive": "new-set-from-one-repo.zip",
+    "capture_scope": "new local verification 2026-11-07; not an Azure deployment or load test"
+  }
+]
